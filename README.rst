@@ -20,18 +20,32 @@ Magically turn your CLI into a GUI program and make it more user friendly.
 
 
 * Free software: MIT license
-* Documentation: https://guiprint.readthedocs.io.
 
 
 Features
 --------
 
-* TODO
+* Replaces print() with a nice dialog box
+* Replaces input() with a nice input dialog.
 
-Credits
--------
+Installation
+------------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+Open your terminal and type the line below to install guiprint
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. code:: bash
+
+	pip install guiprint
+
+In order to use it, first import it and write the following code at the very beginning. Try it on your existing project and your CLI should turn into a basic GUI program.
+
+
+.. code:: python
+
+	import guiprint
+	print = guiprint.print
+	input = guiprint.input
+
+After just inserting these lines before any existing CLI program, run the program again and see the magic!
+
+Author: Md. Ashraful Islam
