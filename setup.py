@@ -12,7 +12,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ['Click>=7.0', ]
 
-test_requirements = ['pytest>=3', ]
+test_requirements = ['pytest>=3', "PyQt5>=5.15.7"]
 
 setup(
     author="Md Ashraful Islam",
@@ -44,6 +44,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ashrafulislambd/guiprint',
-    version='1.0.3',
+    version='1.0.4',
     zip_safe=False,
 )
