@@ -44,6 +44,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ashrafulislambd/guiprint',
-    version='1.0.1',
+    version='1.0.3',
     zip_safe=False,
 )

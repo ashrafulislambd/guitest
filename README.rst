@@ -48,4 +48,19 @@ In order to use it, first import it and write the following code at the very beg
 
 After just inserting these lines before any existing CLI program, run the program again and see the magic!
 
+Additional Features
+-------------------
+
+To use the Input function as a Yes/No Dialog box, set the optional *mode* parameter to *'yesno'* like this,
+
+.. code:: python
+
+	x = input("Are you sure?", mode="yesno")
+
+You can also let user choose an option from multiple options like this,
+
+.. code:: python
+
+	x = input("What's your favorite cricket team?: ", mode="multiple", options=["Bangladesh", "Zimbabwe", "Australia"]) 
+
 Author: Md. Ashraful Islam
